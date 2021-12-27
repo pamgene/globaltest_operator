@@ -5,7 +5,8 @@ library(globaltest)
 aCtx = tercenCtx()
 
 stdz <- FALSE
-if(!is.null(aCtx$op.value("standardize"))) stdz <- as.logical(aCtx$op.value("standardize"))
+if(!is.null(aCtx$op.value("standardize"))) stdz <- (aCtx$op.value("standardize"))
+print(stdz)
 
 directional <- FALSE
 if(!is.null(aCtx$op.value("directional"))) directional <- as.logical(aCtx$op.value("directional"))
