@@ -4,7 +4,26 @@
   "tags": ["basic statistics"],
   "authors": ["tercen"],
   "urls": ["https://github.com/tercen/template_R_operator"],
-  "properties": []
+  "properties": [
+    {
+    "kind": "BooleanProperty",
+    "name": "standardize",
+    "defaultValue": true,
+    "description": "A logical value indicating whether the variables should be standardized before the analysis takes place."
+  }, 
+  {
+    "kind": "BooleanProperty",
+    "name": "directional",
+    "defaultValue": false,
+    "description": "A logical value indicating whether the variables are expected to have the same directionality with grouping."
+  }, 
+    {
+    "kind": "EnumeratedProperty",
+    "name": "modeltype",
+    "defaultValue": "Auto",
+    "values": ["Auto", "logistic", "multinomial", "linear"],
+    "description": "Kinase family"
+  }]
 }
 
 
