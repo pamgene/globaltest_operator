@@ -4,7 +4,7 @@
 
 ##### Description
 
-The `globaltest_operator` performs a global hypothesis test for association of groups of variables, covariates, features with a respons or grouping variable.
+The `globaltest_operator` performs a global hypothesis test for association of groups of variables, covariates, features with a response or grouping variable.
 This is a Tercen wrapper for the R-package `globaltest`.
 
 ##### Usage
