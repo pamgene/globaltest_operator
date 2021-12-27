@@ -5,14 +5,13 @@ library(globaltest)
 aCtx = tercenCtx()
 
 stdz <- FALSE
-if(!is.null(aCtx$op.value("standardize"))) stdz <- (aCtx$op.value("standardize"))
-print(stdz)
+if(!is.null(aCtx$op.value("standardize"))) stdz <- as.logical(aCtx$op.value("standardize"))
 
 directional <- FALSE
 if(!is.null(aCtx$op.value("directional"))) directional <- as.logical(aCtx$op.value("directional"))
 
 modeltype = "auto"
-if(!is.null(aCtx$op.value("modeltype"))) directional <- (aCtx$op.value("modeltype"))
+if(!is.null(aCtx$op.value("modeltype"))) modeltype <- aCtx$op.value("modeltype")
 
 getDataFrame = function(ctx){
   if(!ctx$hasXAxis) stop("Define variables using an x-axis in Tercen")
