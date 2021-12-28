@@ -45,3 +45,4 @@ Details on the computation.
   Jelle J. Goeman, Sara A. van de Geer, Floor de Kort, Hans C. van Houwelingen (2004) A global test for groups
   of genes: testing association with a clinical outcome. Bioinformatics 20, 93-99.
 
+For an example in Tercen: [https://tercen.com/rdewijn/p/e6c57e18528e365a2a68566f6a7fb03f]
