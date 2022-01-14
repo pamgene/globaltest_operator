@@ -36,7 +36,8 @@ Output relations|.
 
 Details on the computation.
 
-##### See Also
+##### References
+
   Jelle J. Goeman and Jan Oosting (2020) Globaltest R package, version 5.44.0. [https://bioconductor.org/packages/release/bioc/html/globaltest.html]
 
   Jelle J. Goeman, Sara A. van de Geer, Hans C. van Houwelingen (2006) Testing against a high-dimensional
@@ -44,5 +45,7 @@ Details on the computation.
 
   Jelle J. Goeman, Sara A. van de Geer, Floor de Kort, Hans C. van Houwelingen (2004) A global test for groups
   of genes: testing association with a clinical outcome. Bioinformatics 20, 93-99.
+  
+##### See Also
 
 For an example in Tercen: [https://tercen.com/rdewijn/p/e6c57e18528e365a2a68566f6a7fb03f]
