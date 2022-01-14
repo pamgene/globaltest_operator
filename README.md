@@ -20,7 +20,7 @@ Input projection|.
 
 Input parameters|.
 ---|---
-`standardize`        | boolean to indicate if variables must be standardized priot to the analysis (dft = true)
+`standardize`        | boolean to indicate if variables must be standardized prior to the analysis (dft = true)
 `directional`        | boolean to indicate if variables are expected to have to same directionality with response (dft = FALSE)
 `modeltype`          | property indicating the modeltype: `auto`, `linear`, `logistic`, `multinomial`. The default = auto, in which case the modeltype is inferred from the properties of the response variable
 
