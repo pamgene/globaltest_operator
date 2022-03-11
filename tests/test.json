@@ -9,5 +9,7 @@
   "colors": ["Tissue.Type"],
   "labels": ["Sample.Name"],
   "yAxis": "value",
-  "xAxis": "ID"
+  "xAxis": "ID",
+  "equalityMethod": "R2",
+  "r2": 0.97,
 }
