@@ -14,16 +14,25 @@ modeltype = "auto"
 if(!is.null(aCtx$op.value("modeltype"))) modeltype <- aCtx$op.value("modeltype")
 
 getDataFrame = function(ctx){
+
   if(!ctx$hasXAxis) stop("Define variables using an x-axis in Tercen")
   if(length(ctx$colors) != 1) stop("Define grouping / response using a single variable as color in Tercen")
-  if(length(ctx$colors) != 1) stop("Define observations using a single variable as lable in Tercen")
+  if(length(ctx$labels) < 1) stop("Define observations using a single variable as label in Tercen")
   df = ctx %>% 
     select( .ri,.ci, .x, .y)
   df = df %>% 
     bind_cols(ctx$select(ctx$colors))
-  df = df %>% 
-    bind_cols(ctx$select(ctx$labels))
-  colnames(df) = c(colnames(df)[1:4], "response", "obs")
+  colnames(df) = c(colnames(df)[1:4], "response")
+  columns = ctx$cselect() %>%
+    mutate(.ci = 0:(n()-1))
+  df = df %>%
+    mutate(response = response %>% as.factor) %>%
+    left_join(columns, by = ".ci")
+  
+  df$obs = (ctx$select(ctx$labels)) %>%
+    as.matrix() %>%
+    apply(1, paste, collapse = "-")
+  
   return(df)
 }
 
