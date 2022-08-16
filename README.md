@@ -14,9 +14,9 @@ Input projection|.
 `row`           | Variables of interest, a global test is performed for each cell in a Tercen cross tab
 `column`        | Variables of interest, a global test is performed for each cell in a Tercen cross tab
 `y-axis`        | numeric, values to perform the test on
-`x-axis`        | factor, x-axis must identifie the variables / co-variates for the test
+`x-axis`        | factor, x-axis must identify the variables / co-variates for the test
 `labels`        | single factor, use a single factor as label to identify the observations for the test
-`colots`        | single variable, use a single variable (numeric or factor) tp identify the resposne variable for the test
+`colors`        | single variable, use a single variable (numeric or factor) to identify the resposne variable for the test
 
 Input parameters|.
 ---|---
