@@ -8,14 +8,14 @@
     {
       "kind": "BooleanProperty",
       "name": "standardize",
-      "defaultValue": "TRUE",
+      "defaultValue": true,
       "description": "A logical value indicating whether the variables should be standardized before the analysis takes place.",
       "values": {}
     },
     {
       "kind": "BooleanProperty",
       "name": "directional",
-      "defaultValue": "FALSE",
+      "defaultValue": false,
       "description": "A logical value indicating whether the variables are expected to have the same directionality with grouping.",
       "values": {}
     },
