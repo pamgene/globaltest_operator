@@ -3,8 +3,8 @@ library(dplyr, warn.conflicts = FALSE)
 library(globaltest)
 
 aCtx = tercenCtx()
-ram <- ctx$op.value("ram", type = numeric, default = 100)
-cpu <- ctx$op.value("cpu", type = numeric, default = 2)
+ram <- aCtx$op.value("ram", type = numeric, default = 100)
+cpu <- aCtx$op.value("cpu", type = numeric, default = 2)
 
 aCtx$requestResources(nCpus=cpu, ram=ram, ram_per_cpu=round(cpu/2) )
 stdz <- FALSE
