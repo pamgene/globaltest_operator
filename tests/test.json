@@ -11,17 +11,5 @@
   "yAxis": "value",
   "xAxis": "ID",
   "equalityMethod": "R2",
-  "r2": 0.97,
-  "propertyValues": [
-    {
-    "kind": "PropertyValue",
-    "name": "ram",
-    "value": "10000000000"
-    },
-        {
-    "kind": "PropertyValue",
-    "name": "cpu",
-    "defaultValue": "2"
-    }
-  ]
+  "r2": 0.97
 }
