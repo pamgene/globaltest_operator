@@ -3,13 +3,8 @@ library(dplyr, warn.conflicts = FALSE)
 library(globaltest)
 
 aCtx = tercenCtx()
-ram <- aCtx$op.value("ram", as.double, 100)
-cpu <- aCtx$op.value("cpu", as.double, 2)
+aCtx$requestResources(nCpus=2, ram=10000000000, ram_per_cpu=round(10000000000/2) )
 
-print(ram)
-print(cpu)
-
-aCtx$requestResources(nCpus=cpu, ram=ram, ram_per_cpu=round(ram/2) )
 stdz <- FALSE
 if(!is.null(aCtx$op.value("standardize"))) stdz <- as.logical(aCtx$op.value("standardize"))
 
