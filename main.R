@@ -9,7 +9,7 @@ cpu <- aCtx$op.value("cpu", as.double, 2)
 print(ram)
 print(cpu)
 
-aCtx$requestResources(nCpus=cpu, ram=ram, ram_per_cpu=round(cpu/2) )
+aCtx$requestResources(nCpus=cpu, ram=ram, ram_per_cpu=round(ram/2) )
 stdz <- FALSE
 if(!is.null(aCtx$op.value("standardize"))) stdz <- as.logical(aCtx$op.value("standardize"))
 
