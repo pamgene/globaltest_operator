@@ -16,12 +16,12 @@
     {
     "kind": "PropertyValue",
     "name": "ram",
-    "value": 10000000000
+    "value": "10000000000"
     },
         {
     "kind": "PropertyValue",
     "name": "cpu",
-    "defaultValue": 2
+    "defaultValue": "2"
     }
   ]
 }

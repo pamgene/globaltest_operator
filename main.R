@@ -3,8 +3,8 @@ library(dplyr, warn.conflicts = FALSE)
 library(globaltest)
 
 aCtx = tercenCtx()
-ram <- aCtx$op.value("ram", type = numeric, default = 100)
-cpu <- aCtx$op.value("cpu", type = numeric, default = 2)
+ram <- aCtx$op.value("ram", as.double, 100)
+cpu <- aCtx$op.value("cpu", as.double, 2)
 
 print(ram)
 print(cpu)
