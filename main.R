@@ -6,6 +6,9 @@ aCtx = tercenCtx()
 ram <- aCtx$op.value("ram", type = numeric, default = 100)
 cpu <- aCtx$op.value("cpu", type = numeric, default = 2)
 
+print(ram)
+print(cpu)
+
 aCtx$requestResources(nCpus=cpu, ram=ram, ram_per_cpu=round(cpu/2) )
 stdz <- FALSE
 if(!is.null(aCtx$op.value("standardize"))) stdz <- as.logical(aCtx$op.value("standardize"))
