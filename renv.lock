@@ -1,6 +1,6 @@
 {
   "R": {
-    "Version": "4.0.3",
+    "Version": "4.0.4",
     "Repositories": [
       {
         "Name": "TERCEN",
@@ -29,7 +29,7 @@
     ]
   },
   "Bioconductor": {
-    "Version": null
+    "Version": "3.12"
   },
   "Packages": {
     "AnnotationDbi": {
@@ -50,11 +50,18 @@
       "Source": "Bioconductor",
       "Hash": "f628c51eadc74ffd838b801cd22d589a"
     },
+    "BiocManager": {
+      "Package": "BiocManager",
+      "Version": "1.30.20",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "a7fca16a50b6ef7771b49d636dd54b57"
+    },
     "DBI": {
       "Package": "DBI",
       "Version": "1.1.1",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": "RSPM",
       "Hash": "030aaec5bc6553f35347cbb1e70b1a17"
     },
     "IRanges": {
@@ -128,21 +135,21 @@
       "Package": "bit64",
       "Version": "4.0.5",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": "RSPM",
       "Hash": "9fe98599ca456d6552421db0d6772d8f"
     },
     "blob": {
       "Package": "blob",
       "Version": "1.2.1",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": "RSPM",
       "Hash": "9addc7e2c5954eca5719928131fed98c"
     },
     "cachem": {
       "Package": "cachem",
       "Version": "1.0.4",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": "RSPM",
       "Hash": "2703a46dcabfb902f10060b2bca9f708"
     },
     "cli": {
@@ -191,7 +198,7 @@
       "Package": "fastmap",
       "Version": "1.1.0",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": "RSPM",
       "Hash": "77bd60a6157420d4ffa93b27cf6a58b8"
     },
     "generics": {
@@ -218,14 +225,14 @@
       "Package": "httr",
       "Version": "1.4.2",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": "RSPM",
       "Hash": "a525aba14184fec243f9eaec62fbed43"
     },
     "jsonlite": {
       "Package": "jsonlite",
       "Version": "1.7.2",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": "RSPM",
       "Hash": "98138e0994d41508c7a6b84a0600cfcb"
     },
     "lattice": {
@@ -253,15 +260,22 @@
       "Package": "memoise",
       "Version": "2.0.0",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": "RSPM",
       "Hash": "a0bc51650201a56d00a4798523cc91b3"
     },
     "mime": {
       "Package": "mime",
       "Version": "0.10",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": "RSPM",
       "Hash": "26fa77e707223e1ce042b2b5d09993dc"
+    },
+    "mtercen": {
+      "Package": "mtercen",
+      "Version": "1.0.8",
+      "Source": "Repository",
+      "Repository": "TERCEN",
+      "Hash": "27b03b2685b9424f08521ea09d24860e"
     },
     "openssl": {
       "Package": "openssl",
@@ -288,7 +302,7 @@
       "Package": "plogr",
       "Version": "0.2.0",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": "RSPM",
       "Hash": "09eb987710984fc2905c7129c7d85e65"
     },
     "plyr": {
@@ -326,6 +340,13 @@
       "Repository": "CRAN",
       "Hash": "04884d9a75d778aca22c7154b8333ec9"
     },
+    "rstudioapi": {
+      "Package": "rstudioapi",
+      "Version": "0.14",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "690bd2acc42a9166ce34845884459320"
+    },
     "stringi": {
       "Package": "stringi",
       "Version": "1.5.3",
@@ -354,6 +375,32 @@
       "Repository": "CRAN",
       "Hash": "b227d13e29222b4574486cfcbde077fa"
     },
+    "teRcenHttp": {
+      "Package": "teRcenHttp",
+      "Version": "1.0.21",
+      "Source": "Repository",
+      "Repository": "TERCEN",
+      "Hash": "18e6c920fb7ddb33ea4e265098ca24c9"
+    },
+    "tercen": {
+      "Package": "tercen",
+      "Version": "0.13.0",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "teRcen",
+      "RemoteUsername": "tercen",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "ba64a52686ecf0dc2a5e65184da2939c9cec1253",
+      "Hash": "89bf685bffca5607586ab05808de02d8"
+    },
+    "tercenApi": {
+      "Package": "tercenApi",
+      "Version": "0.12.8",
+      "Source": "Repository",
+      "Repository": "TERCEN",
+      "Hash": "e92d54419184d7f403d082988a3c41c3"
+    },
     "tibble": {
       "Package": "tibble",
       "Version": "3.1.7",
@@ -375,6 +422,13 @@
       "Repository": "CRAN",
       "Hash": "c9c462b759a5cc844ae25b5942654d13"
     },
+    "uuid": {
+      "Package": "uuid",
+      "Version": "1.1-0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "f1cb46c157d080b729159d407be83496"
+    },
     "vctrs": {
       "Package": "vctrs",
       "Version": "0.4.1",
@@ -388,6 +442,13 @@
       "Source": "Repository",
       "Repository": "CRAN",
       "Hash": "b8acdf8af494d9ec19ccb2481a9b11c2"
+    },
+    "yaml": {
+      "Package": "yaml",
+      "Version": "2.3.7",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Hash": "0d0056cc5383fbc240ccd0cb584bf436"
     }
   }
 }
